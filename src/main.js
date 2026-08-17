@@ -54,6 +54,7 @@ const setCopy=(selector,html)=>{const element=document.querySelector(selector);i
 setCopy('.hero h1','Afacerea ta a crescut. Vânzările au rămas tot pe <em>umerii tăi.</em>')
 setCopy('.hero-copy .lead','Back to Sales este un program practic de 30 de zile pentru antreprenorii care au deja o afacere, clienți și experiență, dar încă vând printre toate celelalte lucruri pe care le au de făcut.')
 setCopy('.hero-copy .no-pressure','Îți construiești o bază de vânzări mai sănătoasă și un proces pe care îl poți urma chiar dacă vânzarea nu este partea ta preferată din business.')
+setCopy('.hero-visual',`<div class="hero-photo-card"><img src="/claudia-hero.jpeg" alt="Claudia Cioceanu, ghidul challenge-ului Back to Sales" width="1086" height="1448"><div class="hero-guide"><b>Challenge ghidat de Claudia Cioceanu</b><span>Business & Performance Coach · 19 ani experiență</span></div></div><div class="sales-map"><small>HARTA CHALLENGE-ULUI</small><ol><li><i>01</i><span>Oportunități</span></li><li><i>02</i><span>Nevoie</span></li><li><i>03</i><span>Ofertă</span></li><li><i>04</i><span>Follow-up</span></li><li><i>05</i><span>Decizie</span></li></ol></div>`)
 
 setCopy('.intro h2','Afacerea ta nu este la început. Dar procesul de vânzare poate avea încă <em>goluri.</em>')
 setCopy('.intro p','Poate ai ani de experiență, clienți mulțumiți și o ofertă bună. Numai că între livrare, echipă, administrativ și problemele zilnice, vânzarea se întâmplă când mai rămâne timp sau când încasările îți cer să te ocupi urgent de ea.')

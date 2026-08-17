@@ -61,3 +61,20 @@ body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .final{background:linear-gradient(155deg,#6D7E99 0%,#B5A697 42%,#E7AB63 68%,#D86850 100%)!important}.final h2,.final p{color:#fff!important}
   footer{background:linear-gradient(120deg,#253A52,#3F5269)!important;color:#fff!important}footer a{color:#fff!important}
 }
+
+/* Human-led hero and challenge map */
+.hero-visual{min-height:610px;align-content:center}
+.hero-photo-card{position:relative;width:min(430px,88%);height:520px;border-radius:34px;overflow:hidden;background:#e8ddd1;box-shadow:30px 38px 70px #17324d38;transform:rotate(1.5deg);z-index:1}
+.hero-photo-card:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 48%,#172f48de 100%);pointer-events:none}
+.hero-photo-card img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.hero-guide{position:absolute;z-index:2;left:26px;right:24px;bottom:106px;color:#fff;display:flex;flex-direction:column;gap:4px;text-shadow:0 2px 12px #17324d99}
+.hero-guide b{font:800 16px 'Manrope'}
+.hero-guide span{font-size:11px;color:#eaf5f4}
+.sales-map{position:absolute;z-index:3;left:0;right:0;bottom:15px;padding:17px 18px 15px;border:1px solid #ffffffb8;border-radius:20px;background:#fffffff2;box-shadow:0 18px 45px #17324d2e;backdrop-filter:blur(14px)}
+.sales-map>small{display:block;margin:0 0 12px;color:var(--teal);font:bold 8px 'Manrope';letter-spacing:.14em}
+.sales-map ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:7px;position:relative}
+.sales-map ol:before{content:'';position:absolute;left:7%;right:7%;top:13px;height:2px;background:linear-gradient(90deg,var(--teal),var(--gold));z-index:0}
+.sales-map li{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--navy);font:700 9px 'Manrope';text-align:center}
+.sales-map li i{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;border:3px solid #fff;font:800 7px 'Manrope';font-style:normal;box-shadow:0 3px 10px #17324d26}
+.sales-map li:last-child i{background:var(--gold);color:var(--navy)}
+@media(max-width:700px){.hero-visual{min-height:540px;margin-top:0}.hero-photo-card{width:92%;height:470px}.hero-guide{left:21px;right:18px;bottom:117px}.sales-map{left:0;right:0;bottom:8px;padding:15px 9px 13px}.sales-map ol{gap:2px}.sales-map li{font-size:7.5px}.sales-map li i{width:25px;height:25px}.sales-map ol:before{left:8%;right:8%;top:12px}}
