@@ -16,3 +16,26 @@ h1,h2,h3,.logo,.kicker,.shell>small,.intro>small,.two-col small,.faq>small{font-
 .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 44%}
 .portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(16,40,61,.35));pointer-events:none}
 .portrait>span,.portrait>i{z-index:3}
+
+/* Sunrise palette: inspired by the reference gradient, while preserving brand contrast. */
+:root{--navy:#243B56;--teal:#2B8581;--petrol:#55768C;--blue:#72839E;--gold:#F3B654;--mint:#F3EEE6;--ice:#F8F3EC;--line:#E5DACE;--ink:#26313D;--muted:#66707A}
+body{background:#FCFAF7}
+.page{background:linear-gradient(180deg,#F8F4EF 0,#FCFAF7 12%,#fff 30%)}
+.site-header{background:rgba(248,244,239,.78);backdrop-filter:blur(18px);border-radius:0 0 18px 18px;padding-inline:18px;position:sticky;top:0}
+.hero{position:relative}
+.hero:before{content:"";position:absolute;z-index:-2;inset:-82px -15vw -80px;background:linear-gradient(158deg,#71839F 0%,#94A2B4 25%,#D2C5AE 56%,#F0BE72 78%,#E77D58 100%);opacity:.22}
+.hero:after{content:"";position:absolute;z-index:-1;width:430px;height:430px;border-radius:50%;left:-220px;bottom:-170px;background:radial-gradient(circle,#FFD28A88,transparent 68%);filter:blur(4px)}
+.hero h1{color:#203750}.hero h1 em{color:#B85E4E}.hero h1 em:after{background:#F6BB6280}.kicker,.shell>small,.intro>small,.two-col small,.faq>small{color:#A65A4B}
+.button{background:#287E7A}.button.gold{background:linear-gradient(135deg,#F4BD61,#E9954F);box-shadow:0 14px 30px #D7804244}.button.gold:hover{background:linear-gradient(135deg,#F8C971,#E98945)}
+.dashboard{background:linear-gradient(155deg,#647894,#354B67 58%,#293D56);box-shadow:35px 45px 75px #4A536447,inset 1px 1px #ffffff33}.bars i{background:linear-gradient(#FFD36F,#E58B45)}.sphere{background:radial-gradient(circle at 30% 25%,#FFE5A8,#F1B24A 42%,#C7604B)}
+.float{background:#fffaf4f2}.trust{background:linear-gradient(100deg,#344B65,#657793)}.trust svg{color:#FFD06B}
+.soft{background:linear-gradient(145deg,#F8F4EF,#F2E9DD)}.problem-grid article,.story-grid article,.price-card,.choice,.fit article{background:#FFFCF8}.problem-grid article:hover{border-color:#E9B978;box-shadow:0 20px 50px #9A684D1B}.insight{background:linear-gradient(110deg,#F5EBDD,#F9DFB2)}
+.dark{background:linear-gradient(145deg,#344B66 0%,#617491 52%,#897F7C 100%)}.dark:has(.weeks){background:linear-gradient(145deg,#2D435D,#566C88 62%,#786F70)}.principle>svg{background:linear-gradient(145deg,#FFD16F,#EF9B50)}
+.hundred{background:linear-gradient(145deg,#3A516C,#7A8599);box-shadow:inset 0 0 0 22px #ffffff0a,inset 0 0 0 23px #F3B65499,0 25px 60px #564E4929}.volume blockquote{background:#FFFCF8;border-left-color:#E98F4B}
+.pricing{background:linear-gradient(180deg,#FFFDFC,#F6EEE4)}.price-card.featured{background:linear-gradient(155deg,#364D67,#62738D 70%,#766F74)}.price-card.featured>i{background:linear-gradient(135deg,#FFD16D,#E9944F)}
+.fit .not-fit{background:#F0EBE6}.portrait{background:linear-gradient(155deg,#73849F,#D3B084 70%,#D97356)}
+.stories{background:linear-gradient(135deg,#F4ECE2,#F7DFAF)}
+.promise{background:linear-gradient(125deg,#354C67 0%,#687A94 48%,#B17C6B 78%,#CC6654 100%)}
+.final{background:linear-gradient(155deg,#6D7E99 0%,#B5A697 42%,#E7AB63 68%,#D86850 100%)}.final p{color:#FFF8F0}.final>div>small{color:#FFF3E8}.final .button.light{background:#FFF9F1}
+footer{background:linear-gradient(120deg,#253A52,#3F5269)}
+@media(max-width:700px){.site-header{padding-inline:10px}.hero:before{inset:-45px -30px -60px}.hero:after{display:none}}
