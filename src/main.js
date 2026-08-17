@@ -58,6 +58,7 @@ setCopy('.hero-visual',`<div class="hero-photo-card"><img src="/claudia-hero.jpe
 
 setCopy('.intro h2','Nu ești la început în ceea ce faci. Dar vânzarea poate avea încă <em>goluri.</em>')
 setCopy('.intro p','Poate ai ani de experiență, clienți mulțumiți și o ofertă bună. Numai că între lucrul cu clienții, sesiuni sau livrare, promovare și administrativ, vânzarea se întâmplă când mai rămâne timp ori când încasările îți cer să te ocupi urgent de ea.')
+document.querySelector('.intro p')?.insertAdjacentHTML('afterend','<p>Poate ai deja vizibilitate, cereri de ofertă și conversații cu potențiali clienți, dar prea puține ajung la follow-up și la o decizie clară.</p>')
 setCopy('.insight b','Nu ai nevoie să o iei de la zero. Ai nevoie să pui în ordine ceea ce faci deja.')
 setCopy('.insight p','Să știi cum creezi oportunități, cum duci o conversație spre ofertă, când revii și ce urmărești ca să nu depinzi doar de inspirație, recomandări sau perioade bune.')
 
