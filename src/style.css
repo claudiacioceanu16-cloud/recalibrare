@@ -39,3 +39,25 @@ body{background:#FCFAF7}
 .final{background:linear-gradient(155deg,#6D7E99 0%,#B5A697 42%,#E7AB63 68%,#D86850 100%)}.final p{color:#FFF8F0}.final>div>small{color:#FFF3E8}.final .button.light{background:#FFF9F1}
 footer{background:linear-gradient(120deg,#253A52,#3F5269)}
 @media(max-width:700px){.site-header{padding-inline:10px}.hero:before{inset:-45px -30px -60px}.hero:after{display:none}}
+
+/* Prevent Samsung Internet / Android auto-dark from remapping brand colors. */
+html,:root{color-scheme:only light!important;background-color:#FCFAF7!important}
+body,.page{color-scheme:only light!important;background-color:#FCFAF7}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hero,.section,.trust,.dark,.pricing,.stories,.promise,.final,footer,.site-header,.mobile-cta{forced-color-adjust:none}
+@media(prefers-color-scheme:dark){
+  html,:root,body{color-scheme:only light!important;background:#FCFAF7!important;color:#26313D!important}
+  .page{background:linear-gradient(180deg,#F8F4EF 0,#FCFAF7 12%,#fff 30%)!important}
+  .site-header{background:rgba(248,244,239,.96)!important}.site-header a,.logo{color:#243B56!important}
+  .hero h1,h2,h3{color:#243B56}.hero p,.section p{color:#66707A}
+  .hero h1 em,h2 em{color:#B85E4E}.button{color:#fff!important}.button.gold,.mobile-cta{color:#243B56!important}
+  .trust{background:linear-gradient(100deg,#344B65,#657793)!important}.trust span{color:#DCE5EC!important}.trust b{color:#fff!important}
+  .dark{background:linear-gradient(145deg,#344B66 0%,#617491 52%,#897F7C 100%)!important}.dark h2,.dark h3,.dark .principle p{color:#fff!important}.dark p,.dark li{color:#E2E8ED!important}
+  .dark:has(.weeks){background:linear-gradient(145deg,#2D435D,#566C88 62%,#786F70)!important}
+  .problem-grid article,.story-grid article,.price-card,.choice,.fit article,.float,.volume blockquote{background:#FFFCF8!important;color:#26313D!important}
+  .problem-grid p,.story-grid p,.price-card p,.choice p,.fit p,.volume blockquote{color:#66707A!important}
+  .price-card.featured{background:linear-gradient(155deg,#364D67,#62738D 70%,#766F74)!important}.price-card.featured h3,.price-card.featured b,.price-card.featured strong,.price-card.featured li{color:#fff!important}
+  .promise{background:linear-gradient(125deg,#354C67 0%,#687A94 48%,#B17C6B 78%,#CC6654 100%)!important}.promise h2,.promise li,.promise p{color:#fff!important}
+  .final{background:linear-gradient(155deg,#6D7E99 0%,#B5A697 42%,#E7AB63 68%,#D86850 100%)!important}.final h2,.final p{color:#fff!important}
+  footer{background:linear-gradient(120deg,#253A52,#3F5269)!important;color:#fff!important}footer a{color:#fff!important}
+}
