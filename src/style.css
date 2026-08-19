@@ -95,3 +95,15 @@ body{font-size:16px}
 .price-note{font-weight:700;color:#A65A4B!important;margin-top:8px}
 .featured .price-note{color:#FFD98B!important}
 @media(max-width:700px){.section{padding:64px 0}.pricing{padding-bottom:42px}.pricing+.section{padding-top:42px}.trust>div{font-size:14px}.delivery span small,.price-block p{font-size:13px}.problem-title{margin-top:36px}.problem-grid{margin-top:18px}}
+
+/* Conversion cues added between the longer sales-page sections. */
+.featured .plan small{color:#fff;background:#ffffff20;border:1px solid #ffffff52;border-radius:999px;padding:7px 10px;font-weight:800;text-shadow:0 1px 8px #17324d66}
+.choice .contact svg{width:23px;height:23px;color:#168c8c;stroke-width:1.9}
+.conversion-cta{padding:26px 0;background:linear-gradient(110deg,#273f5a,#58708d);color:#fff}
+.conversion-cta.warm{background:linear-gradient(110deg,#f8ead9,#f5c982);color:var(--navy)}
+.conversion-cta>.shell{display:flex;align-items:center;justify-content:space-between;gap:34px}
+.conversion-cta b{display:block;font:800 clamp(1.15rem,2vw,1.55rem)/1.25 'Manrope',sans-serif}
+.conversion-cta p{margin:6px 0 0;color:#e7edf2;font-size:14px;line-height:1.5}
+.conversion-cta.warm p{color:#5f6871}
+.conversion-cta .button{flex:none;min-width:250px}
+@media(max-width:700px){.conversion-cta{padding:28px 0}.conversion-cta>.shell{align-items:stretch;flex-direction:column;gap:18px}.conversion-cta .button{width:100%;min-width:0}.featured .plan small{font-size:10px}}
