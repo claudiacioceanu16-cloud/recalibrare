@@ -40,7 +40,7 @@ body{background:#FCFAF7}
 footer{background:linear-gradient(120deg,#253A52,#3F5269)}
 @media(max-width:700px){.site-header{padding-inline:10px}.hero:before{inset:-45px -30px -60px}.hero:after{display:none}}
 
-/* Back to Sales · ediția a II-a */
+/* Back to Sales */
 body{padding-bottom:72px}
 .problem-grid.edition-two{grid-template-columns:repeat(4,1fr)}
 .problem-grid.edition-two article{min-height:210px}
